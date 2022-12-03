@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Lukast2008/goit-react-hw-01-components.git/static/css/main.7961e189.css",
-    "main.js": "/Lukast2008/goit-react-hw-01-components.git/static/js/main.42c5261c.js",
+    "main.css": "/Lukast2008/goit-react-hw-01-components.git/static/css/main.8fd0551f.css",
+    "main.js": "/Lukast2008/goit-react-hw-01-components.git/static/js/main.759d018a.js",
     "index.html": "/Lukast2008/goit-react-hw-01-components.git/index.html",
-    "main.7961e189.css.map": "/Lukast2008/goit-react-hw-01-components.git/static/css/main.7961e189.css.map",
-    "main.42c5261c.js.map": "/Lukast2008/goit-react-hw-01-components.git/static/js/main.42c5261c.js.map"
+    "main.8fd0551f.css.map": "/Lukast2008/goit-react-hw-01-components.git/static/css/main.8fd0551f.css.map",
+    "main.759d018a.js.map": "/Lukast2008/goit-react-hw-01-components.git/static/js/main.759d018a.js.map"
   },
   "entrypoints": [
-    "static/css/main.7961e189.css",
-    "static/js/main.42c5261c.js"
+    "static/css/main.8fd0551f.css",
+    "static/js/main.759d018a.js"
   ]
 }
