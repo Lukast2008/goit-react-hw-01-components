@@ -1,9 +1,11 @@
+import styles from "./styles.module.css"
+import { RowColor } from "./Style";
 const Transactions = ({ transactions }) => {
   return (
     <>
-      <table className="transaction-history">
+      <table className={styles.transactionHistory}>
         <thead>
-          <tr>
+          <tr className={styles.tableHead}>
             <th>Type</th>
             <th>Amount</th>
             <th>Currency</th>
@@ -11,9 +13,9 @@ const Transactions = ({ transactions }) => {
         </thead>
 
         <tbody>
-          {transactions.map(({ id, type, amount, currency }) => (
-            <tr key={id}>
-              <td>{type}</td>
+          {transactions.map(({ id, type, amount, currency }, index) => (
+            <tr key={id} className={RowColor(styles, index)}>
+              <td className={styles.cell}>{type}</td>
               <td>{amount}</td>
               <td>{currency}</td>
             </tr>

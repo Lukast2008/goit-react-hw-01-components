@@ -28,9 +28,6 @@
   margin: 0;
 }
 
-/* flex-direction: column; 
- margin-bottom: 50px;*/
-
 .item {
   display: flex;
   flex-direction: column;

@@ -6,7 +6,7 @@ const FriendsList = ({ friends }) => {
   }
 
   return (
-    <ul class="friend-list" style={{
+    <ul className="friend-list" style={{
       display: 'flex',
       flexDirection: 'column',
       gap: '10px',
@@ -25,7 +25,7 @@ const FriendsList = ({ friends }) => {
             backgroundColor: '#FFF',
             width: '200px',
             height: '80px',
-            margin: '10 auto',
+            margin: '0 auto',
             marginBottom: '20px',
             
           }}
@@ -39,6 +39,7 @@ const FriendsList = ({ friends }) => {
               borderRadius: '50%',
               justifyContent: 'center',
               justifyItems: 'center',
+              
             }}
           >
             {isOnline}
