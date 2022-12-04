@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const FriendsList = ({ friends }) => {
+
+  
   function BackGround(isOnline) {
     return isOnline ? 'green' : 'red';
   }
@@ -54,10 +56,13 @@ const FriendsList = ({ friends }) => {
 };
 
 FriendsList.propTypes = {
-  avatar: PropTypes.string,
-  name:  PropTypes.string,
-  isOnline:  PropTypes.bool,
-  id: PropTypes.number,
+  friends: PropTypes.arrayOf(PropTypes.shape({
+    avatar: PropTypes.string,
+    name: PropTypes.string,
+    isOnline: PropTypes.bool,
+    id: PropTypes.number
+  }))
+ 
 }
 
 export default FriendsList;

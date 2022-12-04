@@ -1,15 +1,14 @@
+import React from 'react';
 import styles from './Style.module.css';
 import PropTypes from 'prop-types';
 
-const ProfFile = ({ user }) => {
-  const {
+const ProfFile = ({
     username,
     tag,
     location,
     avatar,
-    stats: { followers, views, likes },
-  } = user;
-
+    stats,
+  }) => {
   return (
     <div className={styles.profile}>
       <div className={styles.description}>
@@ -22,15 +21,15 @@ const ProfFile = ({ user }) => {
       <ul className={styles.stats}>
         <li className={styles.statsItem}>
           <span className={styles.label}>Followers</span>
-          <span className={styles.quantity}>{followers}</span>
+          <span className={styles.quantity}>{stats.followers}</span>
         </li>
         <li className={styles.statsItem}>
           <span className={styles.label}>Views</span>
-          <span className={styles.quantity}>{views}</span>
+          <span className={styles.quantity}>{stats.views}</span>
         </li>
         <li className={styles.statsItem}>
           <span className={styles.label}>Likes</span>
-          <span className={styles.quantity}>{likes}</span>
+          <span className={styles.quantity}>{stats.likes}</span>
         </li>
       </ul>
     </div>
@@ -42,10 +41,11 @@ ProfFile.propTypes = {
   tag: PropTypes.string,
   location: PropTypes.string,
   avatar: PropTypes.string,
-
-  followers: PropTypes.number,
-  views: PropTypes.number,
-  likes: PropTypes.number,
+  stats: PropTypes.shape( {
+    followers: PropTypes.number,
+    views: PropTypes.number,
+    likes: PropTypes.number,
+  })
 };
 
 export default ProfFile;
