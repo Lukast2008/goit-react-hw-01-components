@@ -1,5 +1,7 @@
-import styles from "./styles.module.css"
-import { RowColor } from "./Style";
+import styles from './styles.module.css';
+import { RowColor } from './Style';
+import PropTypes from 'prop-types';
+
 const Transactions = ({ transactions }) => {
   return (
     <>
@@ -24,6 +26,13 @@ const Transactions = ({ transactions }) => {
       </table>
     </>
   );
+};
+
+Transactions.propTypes = {
+  id: PropTypes.string,
+  type: PropTypes.string,
+  amount: PropTypes.string,
+  currency: PropTypes.string,
 };
 
 export default Transactions;

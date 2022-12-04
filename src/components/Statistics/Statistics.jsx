@@ -1,10 +1,9 @@
 import React from 'react';
 import styles from './Statistic.module.css';
-import {BegColor} from "./Color"
+import { BegColor } from './Color';
+import PropTypes from 'prop-types';
 
 const Statistics = ({ data }) => {
-
-
   return (
     <section className={styles.section}>
       <h2 className={styles.title}>Upload stats</h2>
@@ -21,4 +20,9 @@ const Statistics = ({ data }) => {
   );
 };
 
+Statistics.propTypes = {
+  id: PropTypes.string,
+  label: PropTypes.string,
+  percentage: PropTypes.number,
+};
 export default Statistics;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const FriendsList = ({ friends }) => {
   function BackGround(isOnline) {
@@ -51,5 +52,12 @@ const FriendsList = ({ friends }) => {
     </ul>
   );
 };
+
+FriendsList.propTypes = {
+  avatar: PropTypes.string,
+  name:  PropTypes.string,
+  isOnline:  PropTypes.bool,
+  id: PropTypes.number,
+}
 
 export default FriendsList;
